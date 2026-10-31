@@ -1,0 +1,13 @@
+STELLAFIND AI V1 – INSTALLATION
+
+1. ZIP entpacken. Bei https://app.netlify.com/ kostenlos registrieren.
+2. Für die KI-Funktionen muss dieses Projekt MIT den Netlify Functions deployed werden. Am einfachsten: Ordner in ein GitHub-Repository hochladen, bei Netlify 'Add new project > Import an existing project' auswählen und Repository verbinden. Build command leer, publish directory '.'; deployen.
+3. In Netlify: Project configuration > Environment variables:
+   OPENAI_API_KEY = eigener OpenAI API-Key (kostenpflichtige API-Nutzung)
+   SERPAPI_KEY = eigener SerpApi API-Key für Google Shopping (Tarife/Limit prüfen)
+   Optional OPENAI_VISION_MODEL = gpt-4o-mini
+4. Nach Setzen der Variablen erneut deployen. Keine API-Keys in HTML, GitHub oder Chat eintragen.
+5. Netlify HTTPS-Adresse im Android-Chrome öffnen > Menü > App installieren bzw. Zum Startbildschirm. iPhone: Safari > Teilen > Zum Home-Bildschirm.
+6. Bild hochladen > KI-Fotoanalyse. Danach Shop-Angebote und Zubehörlinks prüfen.
+
+WICHTIG: Die HTML-Datei allein kann keine serverseitige KI/Live-Preissuche durchführen. Ohne Schlüssel bleiben manuelle Shop-Suchlinks funktionsfähig. Ergebnisse sind möglicherweise ungenau oder unvollständig; Preise vor Kauf im Shop prüfen. Keine integrierte Bezahlung. Bilder werden zur KI-Verarbeitung an OpenAI übermittelt, wenn KI aktiviert ist. Vor öffentlicher Nutzung Datenschutzinformationen, Missbrauchsschutz, Rate Limits und Kostenlimits ergänzen. Netlify Drop allein ist für die Functions nicht die empfohlene Bereitstellung; Git-Deployment verwenden.

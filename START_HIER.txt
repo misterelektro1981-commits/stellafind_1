@@ -1,0 +1,9 @@
+STELLAFIND – REPARIERTE VERSION
+
+1. index.html lokal im Browser öffnen: Foto-Vorschau und Shop-Suchlinks funktionieren. KI-Fotoanalyse funktioniert lokal NICHT.
+2. Kostenlosen Netlify-Account anlegen. Für die Netlify Functions: GitHub-Repository mit ALLEN Dateien aus diesem Ordner anlegen, Repository mit Netlify verbinden und deployen. Nicht nur index.html hochladen!
+3. In Netlify Environment Variables OPENAI_API_KEY (kostenpflichtige OpenAI API, getrennt von ChatGPT-Abo) setzen, danach neu deployen. Für automatische Preisresultate zusätzlich SERPAPI_KEY setzen.
+4. Netlify HTTPS-URL auf Android Chrome bzw. iPhone Safari öffnen und zum Startbildschirm hinzufügen.
+5. Test: Foto von Coveys Buch hochladen. KI erkennt voraussichtlich Titel/Autor, wenn API aktiv ist. Preise können ohne Shopping-API nur über externe Suchlinks geprüft werden.
+
+WICHTIG: Vor dem öffentlichen Teilen mit Freundinnen bitte Zugangsschutz, Rate Limits und Budgetlimits einrichten, sonst entstehen potenziell API-Kosten.
